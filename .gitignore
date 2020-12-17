@@ -1,0 +1,14 @@
+*.apk
+*.unitypackage
+
+sysinfo.txt
+
+*.pidb.meta
+*.exe
+
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oobj]
+/[Bb]uild/
+/[Bb]uilds/
+/Assets/AssetStoreTools*
