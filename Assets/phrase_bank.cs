@@ -9,6 +9,8 @@ public class phrase_bank : MonoBehaviour
 
     public float text_update_time = 5;
 
+    public AudioSource audioSource;
+
     private string[] goblin_names = {
         "Skeevy Wallace",
         "Skeevy Williamina",
@@ -30,6 +32,12 @@ public class phrase_bank : MonoBehaviour
         "Soulless Johnny",
         "Skeevy Bartholemew",
         "Toadying Tom",
+        "Harold the Hobgoblin",
+        "Mummy Goblin",
+        "Sordid Sid",
+        "Unpleasant Alex",
+        "Squalid Bruce",
+        "Skeevy Albert Einstein",
     };
 
     private string[] goblin_phrases = {
@@ -47,6 +55,26 @@ public class phrase_bank : MonoBehaviour
         "Why am I running?",
         "I can't stop running!",
         "How many of us must perish until you are satisfied?",
+        "Abscond after me, father!",
+        "Chase me Daddy!",
+        "[ACHIEVEMENT UNLOCKED: READ THIS MESSAGE]",
+        "Tee-hee!",
+        "I'm a naughty gobbo!",
+        "Catch me, art father who are Max!",
+        "Stew me! Stew me!",
+        "I go well with carrots and onions.",
+        "Don't tread on me!",
+        "Jet fuel can't melt steel beams!",
+        "I am a just a little greenskin.",
+        "I'M RUNNING WITH KNIVES!",
+        "What's the point of this game?",
+        "New high score!",
+        "Don't make me run I am full of chocolate!",
+        "We are legion!",
+        "You stewed my family!",
+        "I make a very satisfying splash noise.",
+        "All hail the goblin king!",
+        "Daddy! Daddy! Over here!"
     };
 
     private float update_timer;
@@ -54,6 +82,7 @@ public class phrase_bank : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource.Play();
         update_timer = text_update_time;
     }
 

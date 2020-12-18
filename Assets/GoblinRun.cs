@@ -40,7 +40,16 @@ public class GoblinRun: MonoBehaviour {
     }
     else if (state == State.Falling) {
       transform.position -= new Vector3(0, 0.2f, 0);
-      if (transform.position.y - current_y < 0) {
+      if (transform.position.y - current_y < 10) {
+             
+             
+        var audio_sources = GameObject.FindGameObjectsWithTag("Audio");
+
+        foreach (GameObject audio in audio_sources)
+        {
+          var audio_source = audio.GetComponent<AudioSource>();
+            audio_source.Play();
+        }
         Destroy(gameObject);
       }
     }
