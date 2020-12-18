@@ -11,6 +11,12 @@
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json", {onProgress: UnityProgress});
     </script>
+  <style>
+  body {
+    display: flex;
+    align-items: center;
+  }
+  </style>
   </head>
   <body>
 	<div>
@@ -26,13 +32,15 @@
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
         <div class="title">Chase Me Daddy</div>
       </div>
-	  	<ul>
+    </div>
+	<div>
+	<ul>
 	<li> Music: Goblin King by Evil Sword.</li>
 	<li> Splash Noise from fesilyanstudios.com.</li>
 	<li>  Background assets by ArunSky.com.</li>
 	<li> Goblin assets by GrigoriyArx.</li>
 	<li> Cauldron asset by Ferocious Industries.</li>
 	</ul>
-    </div>
+	</div>
   </body>
 </html>
